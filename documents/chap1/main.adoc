@@ -1,0 +1,18 @@
+= Mon premier fichier ! 
+include::../../.adp/start.adoc[]
+
+
+//❓❓❓ Question ---------------------------------------------------
+:adp_question_uid: f386f3f1a4
+include::{adp_label_question}[]
+[.question]
+**********
+{adp_label_question_rendered}
+
+**********
+//❓ -----------------------------------------------------------------
+
+{adp_show_correction}
+
+
+
