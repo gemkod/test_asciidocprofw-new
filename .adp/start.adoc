@@ -1,4 +1,3 @@
-include::C:/Users/emman/AppData/Local/AsciidocPro/projects/system/bootstrap.adoc[]
-
-
-
+//NE JAMAIS MODIFIER CE FICHIER
+include::C:\Users\emman\AppData\Local\AsciidocPro\projects\framework\fw\bootstrap.adoc[]
+//AUCUNE LIGNE VIDE NE DOIT SUIVRE CE COMMENTAIRE
