@@ -5,7 +5,6 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.26">
-<meta name="author" content="Chuck Norris">
 <title>Mon premier fichier !</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
@@ -435,7 +434,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
 <!--fichier docinfo.html-->
-<!--<link rel="stylesheet" href="C:/Users/emman/AppData/Local/AsciidocPro/projects/fw/system/themes/html5/css/adp.css">-->
+<!--<link rel="stylesheet" href="{adp_theme_asciidoc_css_file}">-->
 <!--JS pour l'affichage de l'index-->
 <script>
     document.addEventListener('DOMContentLoaded', function () {
@@ -917,13 +916,13 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
                  Rouge foncé #C0002E | Gris ardoise #4A4E69
        ============================================================ */
     /*
-    C:/Users/emman/AppData/Local/AsciidocPro/projects/fw/system/images/logo_ap_filigrane.png
+    C:/Users/emman/AppData/Local/AsciidocPro/framework/system/themes/asciidocpro/images/logo_ap_filigrane.png
     */
     /* --- Base -------------------------------------------------- */
     body {
         color: #333333;
         font-family: "Open Sans", "DejaVu Sans", sans-serif;
-        background-image: url('C:/Users/emman/AppData/Local/AsciidocPro/projects/fw/system/images/logo_ap_filigrane.png');
+        background-image: url('data:image/jpeg;base64,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');
         background-attachment: fixed; /* L'image reste fixe au scroll */
         background-size: cover; /* Couvre toute la page */
         background-position: center;
@@ -1301,15 +1300,13 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 }
 </style>
 </head>
-<body class="book">
+<body class="book toc2 toc-left">
 <div id="header">
 <h1>Mon premier fichier !</h1>
 <div class="details">
-<span id="author" class="author">Chuck Norris</span><br>
-<span id="email" class="email"><a href="mailto:norris@mail.fr">norris@mail.fr</a></span><br>
-<span id="revnumber">v. 23</span>
+<span id="author" class="author"></span><br>
 </div>
-<div id="toc" class="toc">
+<div id="toc" class="toc2">
 <div id="toctitle">Table des matières</div>
 <ul class="sectlevel1">
 <li><a href="#_test_des_caractères_unicode">Partie 1. Test des caractères Unicode</a>
@@ -1347,14 +1344,25 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="content">
 <div id="preamble">
 <div class="sectionbody">
-<!-- toc disabled -->
+<div class="paragraph">
+<p>data uri est défini !!</p>
+</div>
+<div class="paragraph">
+<p><mark>[DEBUG] <code>docinfodir</code> : C:/Users/emman/AppData/Local/AsciidocPro/framework/system/docinfo/</mark></p>
+</div>
+<div class="paragraph">
+<p><mark>[DEBUG] <code>adp_system_docinfo_folder</code> : C:/Users/emman/AppData/Local/AsciidocPro/framework/system/docinfo/</mark></p>
+</div>
+<div class="paragraph">
+<p><mark>[DEBUG] <code>pdf-themesdir</code> : C:/Users/emman/AppData/Local/AsciidocPro/framework/system/themes/asciidocpro/adp-theme.yml</mark></p>
+</div>
 <div class="imageblock">
 <div class="content">
 <svg contentStyleType='text/css' data-diagram-type='CLASS' preserveAspectRatio='none' version='1.1' viewBox='0 0 127 84' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns='http://www.w3.org/2000/svg' zoomAndPan='magnify' width="127" height="84"><defs><linearGradient id='g92cqcx0lifeb0' x1='0%' x2='100%' y1='0%' y2='100%'><stop offset='0%' stop-color='#E0F2FE'/><stop offset='100%' stop-color='#7DD3FC'/></linearGradient></defs><g><g class='entity' data-entity='Voiture' data-source-line='6' data-uid='ent0002' id='entity_Voiture'><rect fill='url(#g92cqcx0lifeb0)' height='63.2422' rx='2.5' ry='2.5' style='stroke:#181818;stroke-width:0.5;' width='106.9307' x='7' y='7'/><rect fill='url(#g92cqcx0lifeb0)' height='28.6211' rx='2.5' ry='2.5' style='stroke:url(#g92cqcx0lifeb0);stroke-width:0.5;' width='106.9307' x='7' y='7'/><rect fill='url(#g92cqcx0lifeb0)' height='2.5' style='stroke:url(#g92cqcx0lifeb0);stroke-width:0.5;' width='106.9307' x='7' y='33.1211'/><rect fill='none' height='63.2422' rx='2.5' ry='2.5' style='stroke:#181818;stroke-width:0.5;' width='106.9307' x='7' y='7'/><text fill='#000000' font-family='sans-serif' font-size='14' font-weight='bold' lengthAdjust='spacing' textLength='48.2275' x='36.3516' y='27.1074'>Voiture</text><line style='stroke:#181818;stroke-width:0.5;' x1='8' x2='112.9307' y1='35.6211' y2='35.6211'/><text fill='#000000' font-family='sans-serif' font-size='14' lengthAdjust='spacing' textLength='94.9307' x='13' y='54.7285'>-couleur: String</text><line style='stroke:#181818;stroke-width:0.5;' x1='8' x2='112.9307' y1='62.2422' y2='62.2422'/></g></g></svg>
 </div>
 </div>
 <div class="paragraph">
-<p><mark>[DEBUG] <code>plantuml-svg-type</code> : {plantuml-svg-type}</mark></p>
+<p><mark>[DEBUG] <code>plantuml-format</code> : svg</mark></p>
 </div>
 <div class="paragraph">
 <p>Menu Projet</p>
@@ -1446,16 +1454,16 @@ affichage des réponses par défaut, des todo, des notes, etc. par défaut, le f
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="images/test.png" alt="test">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASEAAABNCAIAAABmPkXZAAAE6UlEQVR4Xu2cQZLbNhBFdQr6HvZB7IPoHvZB7CPMAbSPl/FSVc52lk7NgjVVSYdd6jAASUEkPjhS3q+3MJukAQH9GyAl+/Dz5x9jfv368y+EUD0dwl3Pz89936fnEULb9I/HzF0vLy/pGYRQDR1eX1/TGEKong5pACFUVXgMIa3wGEJa4TGEtMJjCGmFxxDS6vDb9+8AoOPQvXsHADrwGIAWPAagBY8BaMFjAFrwGIAWPAagBY8BaMFjAFrwGIAWPAagBY8BaMFjAFrwGIAWPAagBY8BaMFjAFrwGIAWPAagBY8BaMFj8Cb4+OnT5y9fTqdT3/fn8/nrt292aMH8yrsDj7XG8mb31PFUnpQld369lPcfPiz0x/xmF+R33RFrPGYfOx2JAtldVpnufbw2Yh/fR2PfcViYQUv3/HodlhLerqeHVx8bHPvD8Xj0fvqp/N574WaPRZasU7MyabNik5TH9yVSavek8W4sR9RcHQ1LtqvXSDkOmjss5GaPdUNL/VBd8lMLuDlvvWsd5uRmbd2Ep4v3bd+lzLuxHJESxfrqzjky5+qV1fEehr2Tw0LWeCw20Lc25l3M43Vxg/UFk9eYqE2+BVpRESuSz0UekXJTCvlq1r5o+pRFP5PDQtZ4rBse3Fd85gaz+AYNljxd2PRExvj7D7ug/ZqWz0Ue0ZFshXxwksQdB6Ost5/W7TZb6bHuv1Py+48ffjipp6en/BYFb8pgXoYSRVa53xK1XNm8xeWIDq8y8Xm96aRkJ0G/pTyzK7LRZo/jsfjky7I5s4rYwITj/liL5n8j2rWzdngaFJcVzlkVvMXliA6vhuEx++A2L0mJSYJes6SvPa2JhW8RXN6fmNySsljHY4WsuKWcQo+FGiS0Z4m3NbcbjEktma2KeKPLER0+LHNjMon6nVlh/niVjE1KSbF+HI91oyfjBf/YVLXcUh4vj2HmpTylwmANejImRmAcjHKQX1+dFR7rlPkTnpmshnHW62ByeJU6HpvcK8YWcfIWESU26y5JJt14BDYlk+kbXW1sMG+3z4w9XnXzu+qy4gWGrzOi71c9Hyb/8o0G6x7PY12ZzdQbjwSfwqQ/0qRZ4N8Zmld+V118jmJAYl3NFePjw7Uwp1vw4pJ7frvBuloeK2TFLesIm+Wngmad6S5t+Ut8f8/hf27Zh8DzaUENlnf/7DFBNhqTvRov8r703ZTc5Xhzc/FoNDks5DE91g1lb3ksmnUm1sykWseeLX8AaIn3IY9Lie+7YpmKSGhcIn2sdOafG4Qki64m1STrPTa3vM6xV9meo1lnwksuf4k/Ltsrpq0i3oc8riZKz/jjW9AOkw1hZE55st2KdBDWeyxJnUK1f/yY4+vw9VQer04M1Gn0vdzHy4uQ3cfE+5DHG3C8/Npj4SkrRm/hmu1Ik2G9x94Pv4me3EZPankoHxgfpcnF6ji82Z881QyfnTzeAE+hSA8bB69B/rA6zq67zpz1HoPHYEePOfmT2Fjnvf+Bwnbw2P8dT+U83hJfuI7D78vOg8x1n/m/BuAxOA2/pczjUAs8BqAFjwFowWMAWvAYgBY8BqAFjwFowWMAWvAYgBY8BqAFjwFowWMAWvAYgBY8BqAFjwFowWMAWvAYgBY8BqAFjwFowWMAWvAYgBY8BqAFjwFowWMAWvAYgBY8BqDlbwLeHzXSZZt8AAAAAElFTkSuQmCC" alt="test">
 </div>
 </div>
 <div class="paragraph">
-<p><mark>[DEBUG] <code>adp_project_user_attributes_file</code> : C:/Users/emman/AppData/Local/AsciidocPro/projects/fw/project_123a/attributes.adoc</mark></p>
+<p><mark>[DEBUG] <code>adp_project_user_attributes_file</code> : {adp_project_user_attributes_file}</mark></p>
 </div>
 <div class="sidebarblock question">
 <div class="content">
 <div class="paragraph">
-<p><strong>Q {adp_render_question_staru})</strong></p>
+<p><strong>Q 1)</strong></p>
 </div>
 <div class="paragraph">
 <p>qsdfqsd fqsdfqsdfqsdf</p>
@@ -1465,7 +1473,7 @@ affichage des réponses par défaut, des todo, des notes, etc. par défaut, le f
 <div class="sidebarblock answer">
 <div class="content">
 <div class="paragraph">
-<p><span class="small"><em>Correction de {adp_render_question_staru}</em></span></p>
+<p><span class="small"><em>Correction de 1</em></span></p>
 </div>
 <div class="paragraph">
 <p>ta réponse</p>
@@ -1483,7 +1491,7 @@ Ceci est une vraie phrase qui va permettre de se rendre compte de la fatigue de 
 <div class="sidebarblock question">
 <div class="content">
 <div class="paragraph">
-<p><strong>Q {adp_render_question_starv})</strong></p>
+<p><strong>Q 2)</strong></p>
 </div>
 <div class="paragraph">
 <p>question sans réponse</p>
@@ -1493,7 +1501,7 @@ Ceci est une vraie phrase qui va permettre de se rendre compte de la fatigue de 
 <div class="sidebarblock question">
 <div class="content">
 <div class="paragraph">
-<p><strong>Q {adp_render_question_starw})</strong></p>
+<p><strong>Q 3)</strong></p>
 </div>
 <div class="paragraph">
 <p>autre question mais avec réponse</p>
@@ -1503,7 +1511,7 @@ Ceci est une vraie phrase qui va permettre de se rendre compte de la fatigue de 
 <div class="sidebarblock answer">
 <div class="content">
 <div class="paragraph">
-<p><span class="small"><em>Correction de {adp_render_question_starw}</em></span></p>
+<p><span class="small"><em>Correction de 3</em></span></p>
 </div>
 <div class="paragraph">
 <p>réponse ! !!</p>
@@ -1520,7 +1528,7 @@ Ceci est une vraie phrase qui va permettre de se rendre compte de la fatigue de 
 <p>cliquer sur <a href="https://docs.asciidoctor.org/asciidoc/latest/sections/id-prefix-and-separator/">www.google.fr</a> qsdf qsdfq sdf qsdf qsdfqsdfaze fqsdd fdf qsdf qsdf qdsf qsd fq sd qs qs d fqsdf qsdf qs dfqsddf qsdf qsdf qsd fqsdfqsd qsdf sqdfqs qs qzssdfq sdfqsdfqsdf qsdf</p>
 </div>
 <div class="paragraph">
-<p><mark>[DEBUG] <code>adp_image_logo_icon_asciidocpro_file</code> : C:/Users/emman/AppData/Local/AsciidocPro/projects/fw/system/images/logo_text_ap_horizontal_25px.png</mark></p>
+<p><mark>[DEBUG] <code>adp_image_logo_icon_asciidocpro_file</code> : C:/Users/emman/AppData/Local/AsciidocPro/framework/system/themes/asciidocpro/images/logo_text_ap_horizontal_25px.png</mark></p>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <caption class="title">Tableau 1. <span class="uid"> 4b52077b36 </span></caption>
@@ -1576,7 +1584,7 @@ Ceci est une vraie phrase qui va permettre de se rendre compte de la fatigue de 
 <p><strong>Tâche à faire</strong></p>
 </div>
 <div class="paragraph">
-<p>Chuck Norris</p>
+<p></p>
 </div>
 </div>
 </div>
@@ -1665,7 +1673,7 @@ Ceci est une vraie phrase qui va permettre de se rendre compte de la fatigue de 
 <p>======= sept</p>
 </div>
 <div class="paragraph">
-<p><mark>[DEBUG] <code>adp_project_appdata_folder</code> : C:/Users/emman/AppData/Local/AsciidocPro/projects/fw/project_123a/</mark></p>
+<p><mark>[DEBUG] <code>adp_project_appdata_folder</code> : {adp_project_appdata_folder}</mark></p>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <caption class="title">Tableau 2. <span class="uid"> 5b2c1da862 </span></caption>
@@ -1714,18 +1722,18 @@ Ceci est une vraie phrase qui va permettre de se rendre compte de la fatigue de 
 <div class="sidebarblock question">
 <div class="content">
 <div class="paragraph">
-<p><strong>Q {adp_render_question_starx})</strong>
+<p><strong>Q 4)</strong>
 Ceci est une question</p>
 </div>
 </div>
 </div>
 <div class="paragraph">
-<p><mark>[DEBUG] <code>adp_project_uid</code> : 123a</mark></p>
+<p><mark>[DEBUG] <code>adp_project_uid</code> : {adp_project_uid}</mark></p>
 </div>
 <div class="sidebarblock answer">
 <div class="content">
 <div class="paragraph">
-<p><span class="small"><em>Correction de {adp_render_question_starx}</em></span></p>
+<p><span class="small"><em>Correction de 4</em></span></p>
 </div>
 </div>
 </div>
@@ -1749,7 +1757,7 @@ Ceci est une question</p>
 <div class="sidebarblock question">
 <div class="content">
 <div class="paragraph">
-<p><strong>Q {adp_render_question_stary})</strong></p>
+<p><strong>Q 5)</strong></p>
 </div>
 <div class="paragraph">
 <p>qsdfqsdf qsdfq</p>
@@ -1759,7 +1767,7 @@ Ceci est une question</p>
 <div class="sidebarblock answer">
 <div class="content">
 <div class="paragraph">
-<p><span class="small"><em>Correction de {adp_render_question_stary}</em></span></p>
+<p><span class="small"><em>Correction de 5</em></span></p>
 </div>
 <div class="paragraph">
 <p>qsdfqsdfqsdfqsdf</p>
@@ -1819,8 +1827,7 @@ Ceci est une question</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-v. 23<br>
-Last updated 2026-03-13 14:48:16 +0100
+Last updated 2026-03-14 22:25:49 +0100
 </div>
 </div>
 <!-- docinfo PRIVATE FOOTER — injecté avant </body> uniquement si :docinfo:-->

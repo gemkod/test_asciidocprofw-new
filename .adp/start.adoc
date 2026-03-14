@@ -1,5 +1,5 @@
 //NE JAMAIS MODIFIER CE FICHIER
 //AUCUNE LIGNE VIDE NE DOIT FIGURER DANS CE FICHIER
 :adp_project_code_number: 00000000
-include::C:/Users/emman/AppData/Local/AsciidocPro/projects/projects/{adp_project_code_number}.adoc[]
+include::C:/Users/emman/AppData/Local/AsciidocPro/framework/projects/{adp_project_code_number}/bootstrap.adoc[]
 //AUCUNE LIGNE VIDE NE DOIT FIGURER DANS CE FICHIER

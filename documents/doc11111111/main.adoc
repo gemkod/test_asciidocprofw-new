@@ -1,5 +1,44 @@
-= Mon premier fichier !
+:adp_meta_uid: 11111111
 include::../../.adp/start.adoc[]
+= Mon premier fichier !
+
+ifdef::data-uri[]
+data uri est défini !!
+endif::data-uri[]
+
+##[DEBUG] ``docinfodir`` : {docinfodir}##
+
+##[DEBUG] ``adp_system_docinfo_folder`` : {adp_system_docinfo_folder}##
+
+
+
+
+
+
+ifeval::[{_show_todo}==1]
+[.todo]
+****
+*Tâches à faire*
+
+* problème de rendu du compteur de question
+* créer les attributs pour le thème défini au niveau du projet puis au niveau du document
+* gérer le chargement du thème en fonction du contexte (document, projet, système)
+* gérer la génération des images utilisée dans le css en base 64
+
+//end todo
+****
+//end eval _show_todo
+endif::[]
+
+##[DEBUG] ``pdf-themesdir`` : {pdf-themesdir}{pdf-theme}##
+
+
+
+
+
+
+
+// toc::[]
 
 [plantuml,target=puml_023e5eec, subs="attributes"]
 ....
@@ -17,7 +56,7 @@ class Voiture{
 
 
 
-##[DEBUG] ``plantuml-svg-type`` : {plantuml-svg-type}##
+##[DEBUG] ``plantuml-format`` : {plantuml-format}##
 
 
 Menu Projet
