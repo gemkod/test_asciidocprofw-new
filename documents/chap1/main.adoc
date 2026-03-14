@@ -1,11 +1,30 @@
 = Mon premier fichier !
 include::../../.adp/start.adoc[]
 
+[plantuml,target=puml_023e5eec, subs="attributes"]
+....
+hide circle
+skinparam classAttributeIconSize 0
+skinparam classFontStyle bold
+skinparam classBackgroundColor #E0F2FE/#7DD3FC
+
+class Voiture{
+ - couleur: String
+}
+
+....
+
+
+
+
+##[DEBUG] ``plantuml-svg-type`` : {plantuml-svg-type}##
+
+
 Menu Projet
+
 
 Il doit être possible de quitter via le menu Projet > quitter.
 Certaines actions doivent être prévues sur le document ouvert (enregistrement auto, mise à jour diverses en bdd, index, nettoyage des éléments inutiles, etc)
-
 
 Menu "Document"
 
@@ -42,10 +61,13 @@ Imagine l'utilisateur qui créer un document dans le dossier chap1 avec le titre
 [[doc_0b02400f94]]
 [reftext="asciidocpro_nouvelle_generation"]
 = Asciidocpro nouvelle génération
-include::../../.adp/start.adoc[]
+\include::../../.adp/start.adoc[]
 ----
 
 Le document est chargé automatiquement dans la zone d'édition.
+
+
+
 
 
 
@@ -238,6 +260,7 @@ qsdfqsdfqsdf
 ======= sept
 
 
+##[DEBUG] ``adp_project_appdata_folder`` : {adp_project_appdata_folder}##
 
 
 
