@@ -727,8 +727,8 @@ h2 {
 
 /* --- Code inline (codespan) -------------------------------- */
 code {
-    color: #FF4D75;
-    background-color: #1E2640;
+    color: #7DD3A8 !important;
+    background-color: #1A2830 !important;
     padding: 0.1em 0.3em;
     border-radius: 3px;
     font-size: 0.92em;
@@ -980,6 +980,16 @@ table.tableblock td {
     margin: 0;
 }
 
+/* Neutralise color:rgba(0,0,0,.9) sur pre injecté par le thème Asciidoctor */
+.listingblock pre,
+.literalblock pre,
+pre.CodeRay,
+pre.rouge,
+pre.prettyprint,
+pre.highlightjs {
+    color: #C8D0E8 !important;
+}
+
 .listingblock .content pre,
 .listingblock .content pre code,
 .literalblock .content pre,
@@ -998,6 +1008,7 @@ pre.prettyprint code {
     margin: 0 !important;
     color: #C8D0E8 !important;
     font-family: "DejaVu Sans Mono", monospace;
+    filter: none !important;
 }
 
 /* --- Blocs example (====) ---------------------------------- */
@@ -1032,7 +1043,6 @@ pre.prettyprint code {
 }
 
 /* --- Neutralisation du thème Asciidoctor par défaut -------- */
-/* Assure que le fond global ne soit pas écrasé par le défaut  */
 #content,
 #header,
 #footer-text {
@@ -1067,6 +1077,36 @@ pre.prettyprint code {
 .admonitionblock.warning > table,
 .admonitionblock.caution > table {
     border-color: #E8A030;
+}
+
+/* --- Neutralisation des filtres invert de la preview IntelliJ -- */
+/* IntelliJ injecte filter:invert(90%) hue-rotate(180deg) sur     */
+/* pre, code, titres de blocs, icônes — on annule tout cela.      */
+pre,
+code,
+.listingblock > .title,
+.literalblock > .title,
+.admonitionblock td.content > .title,
+.audioblock > .title,
+.exampleblock > .title,
+.imageblock > .title,
+.stemblock > .title,
+.openblock > .title,
+.paragraph > .title,
+.quoteblock > .title,
+table.tableblock > .title,
+.verseblock > .title,
+.videoblock > .title,
+.dlist > .title,
+.olist > .title,
+.ulist > .title,
+.qlist > .title,
+.hdlist > .title,
+#toctitle,
+.sidebarblock > .content > .title,
+.quoteblock blockquote::before,
+td.icon {
+    filter: none !important;
 }
 </style>
 
@@ -1458,7 +1498,6 @@ document.addEventListener('DOMContentLoaded', function () {
 </li>
 </ul>
 </li>
-<li><a href="#_index">Index</a></li>
 </ul>
 </div>
 </div>
@@ -1466,6 +1505,9 @@ document.addEventListener('DOMContentLoaded', function () {
 <div class="sect1">
 <h2 id="_mon_premier_test">Partie 1. Mon premier test !</h2>
 <div class="sectionbody">
+<div class="paragraph">
+<p>qsdf qdfqsf qsedfqs dfqsd</p>
+</div>
 <div class="openblock">
 <div class="content">
 <div class="paragraph">
@@ -1516,9 +1558,17 @@ Certaines actions doivent être prévues sur le document ouvert (enregistrement 
 <p>Il y a plusieurs types de document : <code>chapter</code>, <code>exercise</code>, <code>evaluation</code> (liste pouvant s&#8217;étoffer dans l&#8217;avenir).</p>
 </div>
 <div class="paragraph">
-<p>Un "document" est un dossier qui contient :
-* un fichier <code>main.adoc</code> (c&#8217;est le fichier principal)
-* des sous-dossiers (au minimum <code>images</code> et <code>extras</code>) (l&#8217;utilisateur doit pouvoir configurer une liste de dossier à créer automatiquement).</p>
+<p>Un "document" est un dossier qui contient :</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>un fichier <code>main.adoc</code> (c&#8217;est le fichier principal)</p>
+</li>
+<li>
+<p>des sous-dossiers (au minimum <code>images</code> et <code>extras</code>) (l&#8217;utilisateur doit pouvoir configurer une liste de dossier à créer automatiquement).</p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
 <p>Voici un exemple d&#8217;un dossier nommé chap1.</p>
@@ -1786,6 +1836,9 @@ Ceci est une vraie phrase qui va permettre de se rendre compte de la fatigue de 
 <div class="paragraph">
 <p><mark>[DEBUG] <code>pdf-theme</code> : ersn-theme.yml</mark></p>
 </div>
+<div class="paragraph">
+<p>ceci est <code>du monospace</code> mais c&#8217;est trop clair</p>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -1941,23 +1994,16 @@ Ceci est une question</p>
 </div>
 </div>
 </div>
-<div style="page-break-after: always;"></div>
 </div>
 </div>
 </div>
 </div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_index">Index</h2>
-<div class="sectionbody">
-
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2026-03-15 19:16:21 +0100
+Last updated 2026-03-15 19:39:24 +0100
 </div>
 </div>
 <!-- docinfo PRIVATE FOOTER — injecté avant </body> uniquement si :docinfo:-->

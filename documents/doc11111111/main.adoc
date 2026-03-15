@@ -4,7 +4,7 @@ include::../../.adp/start.adoc[]
 
 == Mon premier test !
 
-
+qsdf qdfqsf qsedfqs dfqsd
 --
 qsdfqs dfqsdf qs
 
@@ -69,7 +69,9 @@ class Voiture{
 
 
 
+
 Menu Projet
+
 
 
 Il doit être possible de quitter via le menu Projet > quitter.
@@ -86,6 +88,7 @@ On choisit le répertoire dans lequel créer le document (on peut créer un nouv
 Il y a plusieurs types de document : ``chapter``, ``exercise``, ``evaluation`` (liste pouvant s'étoffer dans l'avenir).
 
 Un "document" est un dossier qui contient :
+
 * un fichier ``main.adoc`` (c'est le fichier principal)
 * des sous-dossiers (au minimum ``images`` et ``extras``) (l'utilisateur doit pouvoir configurer une liste de dossier à créer automatiquement).
 
@@ -101,6 +104,8 @@ Voici un exemple d'un dossier nommé chap1.
     └───images
             test.png
 ----
+
+
 
 Le nom du dossier de document est l'équivalent du nom de fichier word en réalité. Comme le framework impose la création d'un fichier main.adoc, c'est la seule possibilité d'avoir visuellement la signification du dossier.
 
@@ -298,6 +303,7 @@ qsdfqsdfqsdf
 
 ##[DEBUG] ``pdf-theme`` : {pdf-theme}##
 
+ceci est ``du monospace`` mais c'est trop clair
 
 
 == second titre
@@ -470,8 +476,5 @@ qsdfqsdfqsdfqsdfqsqsdf
 ****
 endif::[]
 
-<<<
 
-[index]
-= Index
 
