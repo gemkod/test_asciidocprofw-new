@@ -2,13 +2,29 @@
 include::../../.adp/start.adoc[]
 = Mon premier fichier !
 
+== Mon premier test !
+
+
+--
+qsdfqs dfqsdf qs
+
+bloc ouvert
+--
+
+
+##[DEBUG] ``docinfodir`` : {docinfodir}##
+
+
+
 ifdef::data-uri[]
 data uri est défini !!
 endif::data-uri[]
 
-##[DEBUG] ``docinfodir`` : {docinfodir}##
 
-##[DEBUG] ``adp_system_docinfo_folder`` : {adp_system_docinfo_folder}##
+
+##[DEBUG] ``pdf-themesdir`` : {pdf-themesdir}##
+
+##[DEBUG] ``pdf-theme`` : {pdf-theme}##
 
 
 
@@ -29,11 +45,6 @@ ifeval::[{_show_todo}==1]
 ****
 //end eval _show_todo
 endif::[]
-
-##[DEBUG] ``pdf-themesdir`` : {pdf-themesdir}{pdf-theme}##
-
-
-
 
 
 
@@ -56,7 +67,6 @@ class Voiture{
 
 
 
-##[DEBUG] ``plantuml-format`` : {plantuml-format}##
 
 
 Menu Projet
@@ -79,6 +89,7 @@ Un "document" est un dossier qui contient :
 * un fichier ``main.adoc`` (c'est le fichier principal)
 * des sous-dossiers (au minimum ``images`` et ``extras``) (l'utilisateur doit pouvoir configurer une liste de dossier à créer automatiquement).
 
+
 Voici un exemple d'un dossier nommé chap1.
 ----
 └───chap1
@@ -90,7 +101,9 @@ Voici un exemple d'un dossier nommé chap1.
     └───images
             test.png
 ----
+
 Le nom du dossier de document est l'équivalent du nom de fichier word en réalité. Comme le framework impose la création d'un fichier main.adoc, c'est la seule possibilité d'avoir visuellement la signification du dossier.
+
 
 Donc l'utilisateur doit définir le nom du dossier qui va contenir les fichiers composant son document puis définir le titre. (on pourrait proposer de définir le nom du dossier à partir  du titre mais les articles "les", "le" fausse le tri je trouve, donc il faut indiquer que le dossier par défaut aura le titre du document mais que cela est modifiable). L'utilisateur valide.
 Imagine l'utilisateur qui créer un document dans le dossier chap1 avec le titre "Asciidocpro nouvelle génération", le fichier main.adoc contient alors
@@ -129,8 +142,9 @@ Pour configurer un projet, cela revient à renseigner des valeurs qui vont être
 Il s'agit de l'auteur, de son mail et des différentes options de rendu:
 affichage des réponses par défaut, des todo, des notes, etc. par défaut, le fichier des attributs du projet sera le reflet des attributs défini par le framework. et l'utilisateur pourra les modifier ce qui mettra à jour
 
-
+.Belle image
 image::images/test.png[]
+
 
 
 ##[DEBUG] ``adp_project_user_attributes_file`` : {adp_project_user_attributes_file}##
@@ -279,8 +293,10 @@ qsdfqsdfqsdf
 ====
 
 
-##[DEBUG] ``pdf-theme`` : {pdf-theme}##
 
+
+
+##[DEBUG] ``pdf-theme`` : {pdf-theme}##
 
 
 
@@ -314,6 +330,7 @@ qsdfqsdfqsdf
 | 
 |===
 
+
 ====
 qsdfqsdfqsdf
 ====
@@ -345,7 +362,8 @@ Ceci est une question
 **********
 //❓ -----------------------------------------------------------------
 
-##[DEBUG] ``adp_project_uid`` : {adp_project_uid}##
+##[DEBUG] ``adp_project_code_number`` : {adp_project_code_number}##
+
 
 
 
@@ -370,6 +388,7 @@ aaaa aaaa a
 
 [.notable]#qsd qsdf sqdfqsdfqs qsdfqsdf# qsd qs qs
 endif::backend-html5[]
+
 
 
 ifdef::backend-pdf[]
