@@ -1,0 +1,15 @@
+:adp_meta_uid: 33333333
+= Ceci est mon premier livre
+include::../../../.adp/start.adoc[]
+
+
+
+
+= Découvrir Java
+
+:leveloffset: +1
+
+include::../../doc11111111/main.adoc[]
+
+include::../../autre_chapitre/main.adoc[]
+
